@@ -133,6 +133,16 @@ namespace Examen2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap estimacion {
+            get {
+                object obj = ResourceManager.GetObject("estimacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_cancel_128_28318__1_ {
             get {
                 object obj = ResourceManager.GetObject("ic_cancel_128_28318 (1)", resourceCulture);
@@ -143,9 +153,29 @@ namespace Examen2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap registro__1_ {
+            get {
+                object obj = ResourceManager.GetObject("registro (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salida {
             get {
                 object obj = ResourceManager.GetObject("salida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soporte_tecnico {
+            get {
+                object obj = ResourceManager.GetObject("soporte-tecnico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

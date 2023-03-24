@@ -124,6 +124,9 @@
   <data name="bodyeyeopticalorganviewvisual_123100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bodyeyeopticalorganviewvisual_123100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="soporte-tecnico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soporte-tecnico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bienvenidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bienvenidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,13 +139,19 @@
   <data name="cellphoneortablethorizontalpositionscreenvisualizationoption_79923 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cellphoneortablethorizontalpositionscreenvisualizationoption_79923 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1497619669-androidmobile-phone_85137" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1497619669-androidmobile-phone_85137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registro (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registro (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_cancel_128_28318 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_cancel_128_28318 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="estimacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estimacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

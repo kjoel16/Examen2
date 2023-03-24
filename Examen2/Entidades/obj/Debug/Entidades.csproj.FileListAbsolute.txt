@@ -1,0 +1,6 @@
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\bin\Debug\Entidades.dll
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\obj\Debug\Entidades.dll
+C:\Users\kjoel\Desktop\Lenguaje 3\Examen2\Examen2\Examen2\Entidades\obj\Debug\Entidades.pdb

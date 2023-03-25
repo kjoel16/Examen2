@@ -56,7 +56,7 @@ namespace Informacion
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append("SELECT Nombre FROM usuarios");
+                sql.Append("SELECT Idusuarios FROM usuarios");
                 using (MySqlConnection _conexion = new MySqlConnection(cadena))
                 {
                     _conexion.Open();
@@ -67,7 +67,7 @@ namespace Informacion
                         {
                             while (dr.Read())
                             {
-                                usuarios.Add(dr.GetString("Nombre"));
+                                usuarios.Add(dr.GetString("Idusuarios"));
                             }
                         }
                     }

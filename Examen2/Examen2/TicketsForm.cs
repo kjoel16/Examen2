@@ -13,7 +13,9 @@ namespace Examen2
         {
             InitializeComponent();
             LlenarComboBoxUsuarios();
- 
+           
+
+
         }
         string operacion;
         Ticket ticket;
@@ -26,7 +28,7 @@ namespace Examen2
 
         private void UsuarioscomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LlenarComboBoxUsuarios();
+
         }
         private void LlenarComboBoxUsuarios()
         {
@@ -34,6 +36,21 @@ namespace Examen2
             List<string> usuarios = dt.DevolverUsuarios();
             UsuarioscomboBox.DataSource = usuarios;
             UsuarioscomboBox.Refresh();
+        }
+        private void RegistrarCliente()
+        {
+            cliente = new Cliente();
+            cliente.idclientes = IdentidadtextBox.Text;
+            cliente.Nombre = ClientetextBox.Text;
+            bool inserto1 = clienteDb.Insertar(cliente);
+            if (inserto1)
+            {
+                MessageBox.Show("Registro guardado con exito", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo guardar el registro", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Salirbutton_Click(object sender, EventArgs e)
@@ -43,23 +60,24 @@ namespace Examen2
 
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
-            LlenarComboBoxUsuarios();
             operacion = "Nuevo";
+            RegistrarCliente();
             ticket = new Ticket();
             cliente = new Cliente();
             usuarios = new Usuarios();
-            cliente.Nombre = ClientetextBox.Text;
-            cliente.idclientes = IdentidadtextBox.Text;
-            usuarios.Nombre = UsuarioscomboBox.Text;
-            ticket.IdentidadClientes = IdentidadtextBox.Text;
-            ticket.Usuarios = UsuarioscomboBox.Text;
+            usuarios.Idusuarios = UsuarioscomboBox.Text;
+            string idusuarios = usuarios.Idusuarios;
+            cliente.idclientes = IdentidadtextBox.Text; 
+            string idCliente = cliente.idclientes;
+            ticket.Fecha = FechadateTimePicker.Value;
+            ticket.IdentidadClientes = idCliente;
             ticket.TipoSoporte = TipoSoportecomboBox.Text;
-            //ticket.IdentidadClientes = IdentidadtextBox.Text;
             ticket.DescripcionSolicitud = SolicitudtextBox2.Text;
             ticket.DescripcionRespuesta = RespuestatextBox.Text;
             ticket.Precio = Convert.ToDecimal(PreciotextBox.Text);
             ticket.Impuesto = Convert.ToDecimal(ImpuestotextBox.Text);
             ticket.Descuento = Convert.ToDecimal(DescuentotextBox.Text);
+            ticket.Idusuarios = idusuarios;
             if (operacion == "Nuevo")
             {
                
@@ -79,10 +97,8 @@ namespace Examen2
                     return;
                 }
                 errorProvider1.Clear();
-                bool inserto2 = clienteDb.Insertar(cliente);
+                
                 bool inserto = ticketDB.Insertar(ticket);
-               // bool inserto2 = clienteDb.Insertar(cliente);
-                //bool inserto3 = usuariosDB.Insertar(ticket);
                 if (inserto)
                 {                  
                     MessageBox.Show("Registro guardado con exito", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -91,15 +107,13 @@ namespace Examen2
                 {
                     MessageBox.Show("No se pudo guardar el registro", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
            
             
 
         }
 
-        private void Nuevobutton_Click(object sender, EventArgs e)
-        {
-      
-        }
+       
     }
 }

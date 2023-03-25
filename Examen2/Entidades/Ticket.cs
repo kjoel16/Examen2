@@ -11,7 +11,7 @@ namespace Entidades
         public int idticket { get; set; }
         public DateTime Fecha { get; set; }
         public string IdentidadClientes { get; set; }
-        public string Usuarios { get; set; }
+        public string Idusuarios { get; set; }
         public string TipoSoporte { get; set; }
         public string DescripcionSolicitud { get; set; }
         public string DescripcionRespuesta { get; set; }
@@ -24,12 +24,12 @@ namespace Entidades
         {
         }
 
-        public Ticket(int idticket, DateTime fecha, string identidadClientes, string usuarios, string tipoSoporte, string descripcionSolicitud, string descripcionRespuesta, decimal precio, decimal impuesto, decimal descuento, decimal total)
+        public Ticket(int idticket, DateTime fecha, string identidadClientes, string idusuarios, string tipoSoporte, string descripcionSolicitud, string descripcionRespuesta, decimal precio, decimal impuesto, decimal descuento, decimal total)
         {
             this.idticket = idticket;
             Fecha = fecha;
             IdentidadClientes = identidadClientes;
-            Usuarios = usuarios;
+            Idusuarios = idusuarios;
             TipoSoporte = tipoSoporte;
             DescripcionSolicitud = descripcionSolicitud;
             DescripcionRespuesta = descripcionRespuesta;

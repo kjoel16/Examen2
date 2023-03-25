@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Informacion
 {
@@ -19,15 +20,15 @@ namespace Informacion
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO clientes VALUES ");
-                sql.Append(" (@idclientes, @Nombre, @Correo; ");
+                sql.Append(" (@idclientes, @Nombre, @Correo)");
                 using (MySqlConnection _conexion = new MySqlConnection(cadena))
                 {
                     _conexion.Open();
                     using (MySqlCommand comando = new MySqlCommand(sql.ToString(), _conexion))
                     {
                         comando.CommandType = CommandType.Text;
-                        comando.Parameters.Add("@Identidad", MySqlDbType.VarChar, 25).Value = cliente.idclientes;
-                        comando.Parameters.Add("@Nombre", MySqlDbType.VarChar, 50).Value = cliente.Nombre;
+                        comando.Parameters.Add("@idclientes", MySqlDbType.VarChar, 30).Value = cliente.idclientes;
+                        comando.Parameters.Add("@Nombre", MySqlDbType.VarChar, 45).Value = cliente.Nombre;
                         comando.Parameters.Add("@Correo", MySqlDbType.VarChar, 45).Value = cliente.Correo;
                         comando.ExecuteNonQuery();
                         inserto = true;
@@ -36,6 +37,7 @@ namespace Informacion
             }
             catch (System.Exception ex)
             {
+                MessageBox.Show("Error al obtener usuarios: " + ex.Message);
             }
             return inserto;
         }

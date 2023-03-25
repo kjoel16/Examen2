@@ -21,7 +21,7 @@ namespace Informacion
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO tickets VALUES ");
-                sql.Append(" (@idtickets, @Fecha, @IdentidadCliente, @Usuarios, @TipoSoporte, @DescripcionSolicitud, @DescripcionRespuesta, @Precio, @Impuesto, @Descuento, @Total); ");
+                sql.Append(" (@idtickets, @Fecha, @idclientes, @Idusuarios, @TipoSoporte, @DescripcionSolicitud, @DescripcionRespuesta, @Precio, @Impuesto, @Descuento, @Total); ");
                 using (MySqlConnection _conexion = new MySqlConnection(cadena))
                 {
                     _conexion.Open();
@@ -30,8 +30,8 @@ namespace Informacion
                         comando.CommandType = CommandType.Text;
                         comando.Parameters.Add("@idtickets", MySqlDbType.VarChar, 50).Value = ticket.idticket;
                         comando.Parameters.Add("@Fecha", MySqlDbType.DateTime).Value = ticket.Fecha;
-                       // comando.Parameters.Add("@IdentidadCliente", MySqlDbType.VarChar, 30).Value = ticket.IdentidadClientes;
-                        //comando.Parameters.Add("@Usuarios", MySqlDbType.VarChar, 50).Value = ticket.Usuarios;
+                        comando.Parameters.Add("@idclientes", MySqlDbType.VarChar, 30).Value = ticket.IdentidadClientes;
+                        comando.Parameters.Add("@Idusuarios", MySqlDbType.VarChar, 50).Value = ticket.Idusuarios;
                         comando.Parameters.Add("@TipoSoporte", MySqlDbType.VarChar, 50).Value = ticket.TipoSoporte;
                         comando.Parameters.Add("@DescripcionSolicitud", MySqlDbType.VarChar, 100).Value = ticket.DescripcionSolicitud;
                         comando.Parameters.Add("@DescripcionRespuesta", MySqlDbType.VarChar, 100).Value = ticket.DescripcionRespuesta;

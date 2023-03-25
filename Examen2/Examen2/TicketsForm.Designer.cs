@@ -59,6 +59,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.IdentidadtextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,8 +68,9 @@
             // 
             // UsuarioscomboBox
             // 
-            this.UsuarioscomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UsuarioscomboBox.FormattingEnabled = true;
+            this.UsuarioscomboBox.Items.AddRange(new object[] {
+            ""});
             this.UsuarioscomboBox.Location = new System.Drawing.Point(61, 86);
             this.UsuarioscomboBox.Name = "UsuarioscomboBox";
             this.UsuarioscomboBox.Size = new System.Drawing.Size(200, 21);
@@ -336,12 +338,20 @@
             this.label14.TabIndex = 29;
             this.label14.Text = "Identidad Cliente";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(300, 197);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 30;
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(688, 333);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.IdentidadtextBox);
             this.Controls.Add(this.DescuentotextBox);
@@ -415,5 +425,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox IdentidadtextBox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

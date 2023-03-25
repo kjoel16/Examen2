@@ -68,6 +68,7 @@
             // 
             // UsuarioscomboBox
             // 
+            this.UsuarioscomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UsuarioscomboBox.FormattingEnabled = true;
             this.UsuarioscomboBox.Items.AddRange(new object[] {
             ""});
@@ -171,6 +172,7 @@
             this.SolicitudtextBox2.Name = "SolicitudtextBox2";
             this.SolicitudtextBox2.Size = new System.Drawing.Size(200, 20);
             this.SolicitudtextBox2.TabIndex = 13;
+            this.SolicitudtextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SolicitudtextBox2_KeyPress);
             // 
             // RespuestatextBox
             // 
@@ -185,6 +187,7 @@
             this.ClientetextBox.Name = "ClientetextBox";
             this.ClientetextBox.Size = new System.Drawing.Size(200, 20);
             this.ClientetextBox.TabIndex = 15;
+            this.ClientetextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ClientetextBox_KeyPress);
             // 
             // PreciotextBox
             // 
@@ -192,6 +195,7 @@
             this.PreciotextBox.Name = "PreciotextBox";
             this.PreciotextBox.Size = new System.Drawing.Size(201, 20);
             this.PreciotextBox.TabIndex = 16;
+            this.PreciotextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PreciotextBox_KeyPress);
             // 
             // label12
             // 
@@ -217,10 +221,17 @@
             // 
             // TipoSoportecomboBox
             // 
+            this.TipoSoportecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoSoportecomboBox.FormattingEnabled = true;
             this.TipoSoportecomboBox.Items.AddRange(new object[] {
-            "Preventivo",
-            "Correctivo"});
+            "Reemplazo de la pantalla",
+            "Cambio de batería",
+            "Reparación del puerto de carga",
+            "Cambio de altavoz",
+            "Reparación de la cámara",
+            "Reparación de botones",
+            "Reparación del conector de auriculares",
+            "Reparación del micrófono"});
             this.TipoSoportecomboBox.Location = new System.Drawing.Point(420, 53);
             this.TipoSoportecomboBox.Name = "TipoSoportecomboBox";
             this.TipoSoportecomboBox.Size = new System.Drawing.Size(200, 21);
@@ -232,6 +243,7 @@
             this.DescuentotextBox.Name = "DescuentotextBox";
             this.DescuentotextBox.Size = new System.Drawing.Size(182, 20);
             this.DescuentotextBox.TabIndex = 27;
+            this.DescuentotextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DescuentotextBox_KeyPress);
             // 
             // errorProvider1
             // 
@@ -243,6 +255,7 @@
             this.IdentidadtextBox.Name = "IdentidadtextBox";
             this.IdentidadtextBox.Size = new System.Drawing.Size(153, 20);
             this.IdentidadtextBox.TabIndex = 28;
+            this.IdentidadtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IdentidadtextBox_KeyPress);
             // 
             // label14
             // 

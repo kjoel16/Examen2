@@ -47,8 +47,6 @@ namespace Informacion
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("Error al obtener usuarios: " + ex.Message);
-
             }
             return inserto;
         }

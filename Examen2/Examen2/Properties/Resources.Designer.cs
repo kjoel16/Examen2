@@ -153,6 +153,16 @@ namespace Examen2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ingresos {
+            get {
+                object obj = ResourceManager.GetObject("ingresos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap registro__1_ {
             get {
                 object obj = ResourceManager.GetObject("registro (1)", resourceCulture);

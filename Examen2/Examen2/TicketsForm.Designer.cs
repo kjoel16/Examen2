@@ -39,31 +39,31 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SolicitudtextBox2 = new System.Windows.Forms.TextBox();
             this.RespuestatextBox = new System.Windows.Forms.TextBox();
             this.ClientetextBox = new System.Windows.Forms.TextBox();
             this.PreciotextBox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Salirbutton = new System.Windows.Forms.Button();
             this.TipoSoportecomboBox = new System.Windows.Forms.ComboBox();
-            this.Guardarbutton = new System.Windows.Forms.Button();
-            this.ImpuestotextBox = new System.Windows.Forms.TextBox();
             this.DescuentotextBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.IdentidadtextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Guardarbutton = new System.Windows.Forms.Button();
+            this.Salirbutton = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // UsuarioscomboBox
@@ -134,7 +134,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 267);
+            this.label7.Location = new System.Drawing.Point(12, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 7;
@@ -143,7 +143,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 296);
+            this.label8.Location = new System.Drawing.Point(12, 268);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 8;
@@ -152,20 +152,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 325);
+            this.label9.Location = new System.Drawing.Point(12, 297);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 13);
             this.label9.TabIndex = 9;
             this.label9.Text = "Descuento:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 354);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Total:";
             // 
             // FechadateTimePicker
             // 
@@ -197,21 +188,10 @@
             // 
             // PreciotextBox
             // 
-            this.PreciotextBox.Location = new System.Drawing.Point(61, 264);
+            this.PreciotextBox.Location = new System.Drawing.Point(61, 236);
             this.PreciotextBox.Name = "PreciotextBox";
             this.PreciotextBox.Size = new System.Drawing.Size(201, 20);
             this.PreciotextBox.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 18);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 26);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Datos";
             // 
             // label12
             // 
@@ -229,17 +209,85 @@
             this.label13.AutoSize = true;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(12, 218);
+            this.label13.Location = new System.Drawing.Point(12, 190);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(114, 26);
             this.label13.TabIndex = 21;
             this.label13.Text = "Estimacion";
             // 
+            // TipoSoportecomboBox
+            // 
+            this.TipoSoportecomboBox.FormattingEnabled = true;
+            this.TipoSoportecomboBox.Items.AddRange(new object[] {
+            "Preventivo",
+            "Correctivo"});
+            this.TipoSoportecomboBox.Location = new System.Drawing.Point(420, 53);
+            this.TipoSoportecomboBox.Name = "TipoSoportecomboBox";
+            this.TipoSoportecomboBox.Size = new System.Drawing.Size(200, 21);
+            this.TipoSoportecomboBox.TabIndex = 24;
+            // 
+            // DescuentotextBox
+            // 
+            this.DescuentotextBox.Location = new System.Drawing.Point(80, 297);
+            this.DescuentotextBox.Name = "DescuentotextBox";
+            this.DescuentotextBox.Size = new System.Drawing.Size(182, 20);
+            this.DescuentotextBox.TabIndex = 27;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // IdentidadtextBox
+            // 
+            this.IdentidadtextBox.Location = new System.Drawing.Point(107, 148);
+            this.IdentidadtextBox.Name = "IdentidadtextBox";
+            this.IdentidadtextBox.Size = new System.Drawing.Size(153, 20);
+            this.IdentidadtextBox.TabIndex = 28;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 151);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Identidad Cliente";
+            // 
+            // Guardarbutton
+            // 
+            this.Guardarbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Guardarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardarbutton.Image = global::Examen2.Properties.Resources.ingresos;
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Guardarbutton.Location = new System.Drawing.Point(410, 287);
+            this.Guardarbutton.Name = "Guardarbutton";
+            this.Guardarbutton.Size = new System.Drawing.Size(124, 52);
+            this.Guardarbutton.TabIndex = 25;
+            this.Guardarbutton.Text = "Generar Ticket";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            // 
+            // Salirbutton
+            // 
+            this.Salirbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Salirbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Salirbutton.Image = global::Examen2.Properties.Resources.salida;
+            this.Salirbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Salirbutton.Location = new System.Drawing.Point(540, 287);
+            this.Salirbutton.Name = "Salirbutton";
+            this.Salirbutton.Size = new System.Drawing.Size(93, 52);
+            this.Salirbutton.TabIndex = 23;
+            this.Salirbutton.Text = "Salir";
+            this.Salirbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Salirbutton.UseVisualStyleBackColor = true;
+            this.Salirbutton.Click += new System.EventHandler(this.Salirbutton_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Examen2.Properties.Resources.estimacion;
-            this.pictureBox3.Location = new System.Drawing.Point(132, 210);
+            this.pictureBox3.Location = new System.Drawing.Point(132, 182);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 34);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -268,94 +316,56 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // Salirbutton
+            // label11
             // 
-            this.Salirbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Salirbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salirbutton.Image = global::Examen2.Properties.Resources.salida;
-            this.Salirbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Salirbutton.Location = new System.Drawing.Point(540, 287);
-            this.Salirbutton.Name = "Salirbutton";
-            this.Salirbutton.Size = new System.Drawing.Size(93, 32);
-            this.Salirbutton.TabIndex = 23;
-            this.Salirbutton.Text = "Salir";
-            this.Salirbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Salirbutton.UseVisualStyleBackColor = true;
-            this.Salirbutton.Click += new System.EventHandler(this.Salirbutton_Click);
+            this.label11.AutoSize = true;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 26);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Datos";
             // 
-            // TipoSoportecomboBox
+            // label10
             // 
-            this.TipoSoportecomboBox.FormattingEnabled = true;
-            this.TipoSoportecomboBox.Items.AddRange(new object[] {
-            "Preventivo",
-            "Correctivo"});
-            this.TipoSoportecomboBox.Location = new System.Drawing.Point(420, 53);
-            this.TipoSoportecomboBox.Name = "TipoSoportecomboBox";
-            this.TipoSoportecomboBox.Size = new System.Drawing.Size(200, 21);
-            this.TipoSoportecomboBox.TabIndex = 24;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(83, 268);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "15%";
             // 
-            // Guardarbutton
+            // label15
             // 
-            this.Guardarbutton.Location = new System.Drawing.Point(447, 221);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(75, 23);
-            this.Guardarbutton.TabIndex = 25;
-            this.Guardarbutton.Text = "Guardar";
-            this.Guardarbutton.UseVisualStyleBackColor = true;
-            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(268, 239);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 13);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Lps.";
             // 
-            // ImpuestotextBox
+            // label16
             // 
-            this.ImpuestotextBox.Location = new System.Drawing.Point(71, 293);
-            this.ImpuestotextBox.Name = "ImpuestotextBox";
-            this.ImpuestotextBox.Size = new System.Drawing.Size(191, 20);
-            this.ImpuestotextBox.TabIndex = 26;
-            // 
-            // DescuentotextBox
-            // 
-            this.DescuentotextBox.Location = new System.Drawing.Point(80, 325);
-            this.DescuentotextBox.Name = "DescuentotextBox";
-            this.DescuentotextBox.Size = new System.Drawing.Size(182, 20);
-            this.DescuentotextBox.TabIndex = 27;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // IdentidadtextBox
-            // 
-            this.IdentidadtextBox.Location = new System.Drawing.Point(107, 148);
-            this.IdentidadtextBox.Name = "IdentidadtextBox";
-            this.IdentidadtextBox.Size = new System.Drawing.Size(153, 20);
-            this.IdentidadtextBox.TabIndex = 28;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 151);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(86, 13);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Identidad Cliente";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(300, 197);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 30;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(268, 300);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(27, 13);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "Lps.";
             // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(688, 333);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(688, 357);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.IdentidadtextBox);
             this.Controls.Add(this.DescuentotextBox);
-            this.Controls.Add(this.ImpuestotextBox);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.TipoSoportecomboBox);
             this.Controls.Add(this.Salirbutton);
@@ -370,7 +380,6 @@
             this.Controls.Add(this.RespuestatextBox);
             this.Controls.Add(this.SolicitudtextBox2);
             this.Controls.Add(this.FechadateTimePicker);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -384,10 +393,10 @@
             this.Name = "TicketsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicketsForm";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,14 +414,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.TextBox SolicitudtextBox2;
         private System.Windows.Forms.TextBox RespuestatextBox;
         private System.Windows.Forms.TextBox ClientetextBox;
         private System.Windows.Forms.TextBox PreciotextBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label13;
@@ -420,11 +426,14 @@
         private System.Windows.Forms.Button Salirbutton;
         private System.Windows.Forms.ComboBox TipoSoportecomboBox;
         private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.TextBox ImpuestotextBox;
         private System.Windows.Forms.TextBox DescuentotextBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox IdentidadtextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
     }
 }

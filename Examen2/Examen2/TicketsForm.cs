@@ -2,6 +2,7 @@
 using Informacion;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Examen2
@@ -24,6 +25,10 @@ namespace Examen2
         ClienteDB clienteDb = new ClienteDB();
         Usuarios usuarios;
         UsuariosDB usuariosDB = new UsuariosDB();
+        decimal Total = 0;
+        decimal Impuesto = 0;
+        decimal Precio = 0;
+        decimal descuento = 0;
 
 
         private void UsuarioscomboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,26 +63,38 @@ namespace Examen2
             Close();
         }
 
+
+
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
+            
+            Precio = Convert.ToDecimal(PreciotextBox.Text);
+            Impuesto = Precio * 15 / 100;
+            descuento = Convert.ToDecimal(DescuentotextBox.Text);
+            Total = Precio + Impuesto - descuento;
             operacion = "Nuevo";
             RegistrarCliente();
             ticket = new Ticket();
+            List<int> numeros = Enumerable.Range(1, 500).OrderBy(x => Guid.NewGuid()).ToList();
+            int numeroAleatorio = numeros[0];
             cliente = new Cliente();
             usuarios = new Usuarios();
             usuarios.Idusuarios = UsuarioscomboBox.Text;
             string idusuarios = usuarios.Idusuarios;
             cliente.idclientes = IdentidadtextBox.Text; 
             string idCliente = cliente.idclientes;
+            ticket.idticket = numeroAleatorio;
             ticket.Fecha = FechadateTimePicker.Value;
             ticket.IdentidadClientes = idCliente;
             ticket.TipoSoporte = TipoSoportecomboBox.Text;
             ticket.DescripcionSolicitud = SolicitudtextBox2.Text;
             ticket.DescripcionRespuesta = RespuestatextBox.Text;
-            ticket.Precio = Convert.ToDecimal(PreciotextBox.Text);
-            ticket.Impuesto = Convert.ToDecimal(ImpuestotextBox.Text);
-            ticket.Descuento = Convert.ToDecimal(DescuentotextBox.Text);
+            ticket.Precio = Precio;
+            ticket.Descuento = descuento;
+            ticket.Impuesto = Impuesto;
+            ticket.Total = Total;
             ticket.Idusuarios = idusuarios;
+            
             if (operacion == "Nuevo")
             {
                
